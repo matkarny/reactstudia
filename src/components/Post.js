@@ -1,10 +1,13 @@
 import React from "react";
+import Image from "./Image";
+import Title from "./Title";
+import PostBody from "./PostBody";
 
-const Button = ( { name, image, text } ) => (
+const Post = ( { name, image, text } ) => (
     <div>
-    <Image />
-    <Title />
-    <Body />
+    <Image sorc={image}/>
+    <Title titled={name}/>
+    <PostBody text={text} />
     </div>
 );
 
